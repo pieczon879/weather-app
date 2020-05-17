@@ -1,0 +1,58 @@
+.sidebar{
+    &__item{
+        max-width:14rem;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin:0 auto;
+        @media(min-width:576px){
+            margin:unset;
+            margin-left:auto;
+        }
+        
+
+        &+&{
+            border-top:2px solid #eeeeee;
+        }
+
+        &--day{
+            height:3rem;
+        }
+
+        &--hour{
+            height:5.8rem;
+        }
+
+        &--forecast{
+            height:6.8rem;
+        }
+
+        &--temperature{
+            height:20rem;
+        }
+
+        &--rainfall{
+            height:12rem;
+        }
+
+        &--windsDirection{
+            height:12rem;
+        }
+        
+        &--windSpeed{
+            height:9.5rem;
+        }
+
+        &--pressure{
+            height:20rem;
+        }
+    }
+
+    &__title{
+        color:#888888;
+        font-size:1.8rem;
+        text-align:center;
+        letter-spacing:1px;
+        margin-bottom:0;
+    }
+}
